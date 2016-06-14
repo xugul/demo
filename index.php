@@ -66,5 +66,6 @@ $img=GrabImage("http://www.baidu.com/img/bd_logo1.png","");
 if($img):echo '<pre><img src="'.$img.'"></pre>'; 
 else:echo "false";
 endif;
+print_r("好开心啊！终于对git搞懂一点了");
 
 ?>
