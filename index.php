@@ -66,16 +66,23 @@
 //if($img):echo '<pre><img src="'.$img.'"></pre>'; 
 //else:echo "false";
 //endif;
-print_r("好开心啊！终于对git搞懂一点了");
-echo "<br/>";
-//$city = "上海";
-//$name = "林子";
-//$nothing_here = "是啊，什么都没有";
-//$location_vars = array('city','name');
-//$result = compact('event','nothing_here',$location_vars);
-//print_r($result);
-$input = array("red", "green", "blue", "yellow");
-array_splice($input,-2,2);
-print_r($input);echo "<br/>";
-print_r(array_search('red', $input));
+//print_r("好开心啊！终于对git搞懂一点了");
+//echo "<br/>";
+////$city = "上海";
+////$name = "林子";
+////$nothing_here = "是啊，什么都没有";
+////$location_vars = array('city','name');
+////$result = compact('event','nothing_here',$location_vars);
+////print_r($result);
+//$input = array("red", "green", "blue", "yellow");
+//array_splice($input,-2,2);
+//print_r($input);echo "<br/>";
+//print_r(array_search('red', $input));
+session_start();
+if(!isset($_SESSION['count'])){
+    $_SESSION['count'] = 0;
+} else{
+    $_SESSION['count']++;
+}
+print_r($_SESSION);die;
 ?>
